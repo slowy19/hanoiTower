@@ -1,0 +1,60 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 50px;
+    width: 100%;
+    height: 60vh;
+
+    .parrentColumn {
+        height: 100%;
+        align-items: center;
+        justify-content: end;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        max-width: 500px;
+        align-items: center;
+
+        .button {
+            all: unset;
+
+            padding: 10px;
+            border-radius: 12px;
+            background: green;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 1px solid #000;
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .block {
+        padding: 10px;
+        border-radius: 12px;
+        background: #ccc;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+
+        &:hover {
+        background: green;
+        color: #fff;
+        transition: all ease .1s;
+        }
+    }
+
+    .active {
+        background: rgb(1, 88, 1) !important;
+        color: #fff;
+        transition: all ease .3s;
+    }
+}
